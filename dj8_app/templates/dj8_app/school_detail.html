@@ -12,4 +12,9 @@
   <p>{{ students.name }} who is {{ students.age }} years old.</p>
   {% endfor %}
 </div>
+<div class="container">
+  <p><a class="btn btn-primary" href="{% url 'dj8_app:update' pk=school_detail.pk %}">Update</a></p>
+  <p>Want to delete school?</p>
+  <p><a class="btn btn-warning" href="{% url 'dj8_app:delete' pk=school_detail.pk %}">Delete</a></p>
+</div>
 {% endblock %}

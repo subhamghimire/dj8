@@ -1,0 +1,15 @@
+{% extends 'dj8_app/dj8_app_base.html' %}
+{% block content %}
+<h1>
+  {%if not form.instance.pk %}
+  Create School
+  {% else %}
+  Update School
+  {% endif %}
+</h1>
+<form method="POST">
+  {% csrf_token %}
+  {{ form.as_p }}
+  <input class="btn btn-primary" type="submit" value="Submit">
+</form>
+{% endblock %}
