@@ -9,6 +9,15 @@
   <title>Base</title>
 </head>
 <body>
+
+  <nav class="navbar navbar-default navbar-static-top">
+    <ul class="nav navbar-nav">
+      <li><a class="navbar-brand" href="{% url 'dj8_app:list' %}">Schools</a></li>
+      <li><a class="navbar-link" href="{% url 'admin:index' %}">Admin</a></li>
+      <li><a href="#"></a></li>
+    </ul>
+
+  </nav>
   <div class="container">
 {% block content %}
 {% endblock %}
