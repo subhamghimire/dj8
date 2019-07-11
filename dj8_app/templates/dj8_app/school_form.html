@@ -1,7 +1,7 @@
 {% extends 'dj8_app/dj8_app_base.html' %}
 {% block content %}
 <h1>
-  {%if not form.instance.pk %}
+  {% if not form.instance.pk %}
   Create School
   {% else %}
   Update School
